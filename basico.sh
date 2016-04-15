@@ -49,6 +49,9 @@ echo "TEMAS e ICONOS"
 sudo add-apt-repository ppa:noobslab/potenza
 sudo apt-add-repository ppa:numix/ppa
 
+echo "MENDELEY"
+wget https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest
+sudo dpkg -i mendeleydesktop*.deb
 
 # echo "CONDA"
 # wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
