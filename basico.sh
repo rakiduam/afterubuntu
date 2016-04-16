@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/
 
-echo "esenciales after install ubuntu"
+echo "INSTALACION ESENCIAL DESPUES DE INSTALAR UBUNTU AGAIN"
 sudo apt-get update && sudo apt-get upgrade
 
 echo "RESTRICTED EXTRAS"
@@ -30,6 +30,11 @@ echo "caffeine"
 sudo add-apt-repository -y ppa:caffeine-developers/ppa
 sudo apt-get install -y caffeine
 
+echo "##### APLICACIONES ######"
+echo "MENDELEY"
+wget https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest
+sudo dpkg -i mendeleydesktop*.deb
+
 echo "GIT"
 sudo apt-get install -y git
 
@@ -40,18 +45,35 @@ sudo apt-get update
 sudo apt-get install -y spotify-client
 sudo apt-get update && sudo apt-get -y upgrade
 
+echo "##### FIXES VARIOS ######"
+echo "fix luz ubuntu?"
+sudo add-apt-repository ppa:nrbrtx/sysvinit-backlight
+sudo apt-get update
+sudo apt-get install sysvinit-backlight
+
+### SUMA DE HASH NO FUNCIONA
+## sudo rm -rf /var/lib/apt/lists/*
+
+echo "##### PERSONALIZACION ######"
+echo "VARIETY"
+sudo add-apt-repository ppa:peterlevi/ppa
+sudo apt-get update
+sudo apt-get install variety
+
 echo "CONKY"
 sudo add-apt-repository -y ppa:teejee2008/ppa
 sudo apt-get update
 sudo apt-get install -y conky-manager
 
 echo "TEMAS e ICONOS"
-sudo add-apt-repository ppa:noobslab/potenza
-sudo apt-add-repository ppa:numix/ppa
-
-echo "MENDELEY"
-wget https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest
-sudo dpkg -i mendeleydesktop*.deb
+#MOKA
+sudo add-apt-repository ppa:moka/stable
+sudo apt-get update
+sudo apt-get install moka-icon-theme
+#NUMIX
+sudo add-apt-repository ppa:numix/ppa
+sudo apt-get update
+sudo apt-get install numix-icon-theme numix-icon-theme-circle
 
 # echo "CONDA"
 # wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
