@@ -74,6 +74,11 @@ sudo apt-get install moka-icon-theme
 sudo add-apt-repository ppa:numix/ppa
 sudo apt-get update
 sudo apt-get install numix-icon-theme numix-icon-theme-circle
+#ELEMENTARY
+sudo add-apt-repository ppa:elementary-os/daily
+sudo apt-get update
+sudo apt-get install elementary-icon-theme
+#sudo apt-get remove elementary-icon-theme
 
 # echo "CONDA"
 # wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
