@@ -55,25 +55,28 @@ sudo apt-get install sysvinit-backlight
 ## sudo rm -rf /var/lib/apt/lists/*
 
 echo "##### PERSONALIZACION ######"
-echo "VARIETY"
-sudo add-apt-repository ppa:peterlevi/ppa
-sudo apt-get update
-sudo apt-get install variety
-
-echo "CONKY"
-sudo add-apt-repository -y ppa:teejee2008/ppa
-sudo apt-get update
-sudo apt-get install -y conky-manager
+# echo "VARIETY"
+# sudo add-apt-repository ppa:peterlevi/ppa
+# sudo apt-get update
+# sudo apt-get install variety
+#
+# echo "CONKY"
+# sudo add-apt-repository -y ppa:teejee2008/ppa
+# sudo apt-get update
+# sudo apt-get install -y conky-manager
 
 echo "TEMAS e ICONOS"
-#MOKA
-sudo add-apt-repository ppa:moka/stable
-sudo apt-get update
-sudo apt-get install moka-icon-theme
-#NUMIX
-sudo add-apt-repository ppa:numix/ppa
-sudo apt-get update
-sudo apt-get install numix-icon-theme numix-icon-theme-circle
+## en cuanto a iconos tal vez sea mejor descargar los paquetes
+## e instalar uno a uno, ya que tienen dependencias con otros paquetes
+## evitaria ver millones en unity tweak
+# #MOKA
+# sudo add-apt-repository ppa:moka/stable
+# sudo apt-get update
+# sudo apt-get install moka-icon-theme
+# #NUMIX
+# sudo add-apt-repository ppa:numix/ppa
+# sudo apt-get update
+# sudo apt-get install numix-icon-theme numix-icon-theme-circle
 #ELEMENTARY
 sudo add-apt-repository ppa:elementary-os/daily
 sudo apt-get update
