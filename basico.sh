@@ -26,7 +26,7 @@ sudo add-apt-repository -y ppa:caffeine-developers/ppa
 sudo apt install -y caffeine
 
 echo "##### OTRAS APLICACIONES ######"
-
+#jojojojojjo
 # echo "MENDELEY"
 # wget https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest
 # sudo dpkg -i mendeleydesktop*.deb
