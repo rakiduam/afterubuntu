@@ -29,6 +29,10 @@ echo "GIT"
 sudo apt install -y git
 
 echo "##### OTRAS APLICACIONES ######"
+echo "CALIBRE"
+sudo -y -v && wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
+
+
 #jojojojojjo
 # echo "MENDELEY"
 # wget https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest
