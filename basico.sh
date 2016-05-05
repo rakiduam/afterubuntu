@@ -25,20 +25,14 @@ sudo tlp start
 echo "caffeine"
 sudo add-apt-repository -y ppa:caffeine-developers/ppa
 sudo apt install -y caffeine
+echo "GIT"
+sudo apt install -y git
 
 echo "##### OTRAS APLICACIONES ######"
 #jojojojojjo
 # echo "MENDELEY"
 # wget https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest
 # sudo dpkg -i mendeleydesktop*.deb
-
-echo "GIT"
-sudo apt install -y git
-
-# echo "QGIS LTR"
-# #sudo add-apt-repository ppa:ubuntugis/ubuntugis-LTR
-# #sudo apt update
-# #sudo apt install qgis python-qgis qgis-plugin-grass grass saga
 
 echo "SPOTIFY"
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
@@ -52,6 +46,11 @@ echo "##### FIXES VARIOS ######"
 # sudo add-apt-repository ppa:nrbrtx/sysvinit-backlight
 # sudo apt update
 # sudo apt install sysvinit-backlight
+
+# echo "QGIS LTR"
+# #sudo add-apt-repository ppa:ubuntugis/ubuntugis-LTR
+# #sudo apt update
+# #sudo apt install qgis python-qgis qgis-plugin-grass grass saga
 
 ### SUMA DE HASH NO FUNCIONA
 ## sudo rm -rf /var/lib/apt/lists/*
