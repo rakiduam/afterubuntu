@@ -1,5 +1,4 @@
 #!/bin/
-
 echo "INSTALACION ESENCIAL DESPUES DE INSTALAR UBUNTU AGAIN"
 sudo apt update && sudo apt upgrade
 echo "COMPRIMIDOS"
@@ -8,6 +7,8 @@ echo "RESTRICTED EXTRAS"
 sudo apt install -y ubuntu-restricted-extras
 echo "PLAYONLINUX"
 sudo apt install -y playonlinux
+echo "REDSHIFT"
+sudo apt install -y redshift-gtk
 echo "TWEAK"
 sudo apt install -y unity-tweak-tool
 sudo apt install -y compizconfig-settings-manager
