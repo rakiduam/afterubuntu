@@ -32,19 +32,6 @@ echo "##### OTRAS APLICACIONES ######"
 echo "CALIBRE"
 sudo -y -v && wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
 
-
-#jojojojojjo
-# echo "MENDELEY"
-# wget https://www.mendeley.com/repositories/ubuntu/stable/amd64/mendeleydesktop-latest
-# sudo dpkg -i mendeleydesktop*.deb
-
-echo "SPOTIFY"
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
-echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
-sudo apt update
-sudo apt install -y spotify-client
-sudo apt update && sudo apt -y upgrade
-
 echo "##### FIXES VARIOS ######"
 # echo "fix luz ubuntu 14.04.4"
 # sudo add-apt-repository ppa:nrbrtx/sysvinit-backlight
@@ -58,36 +45,3 @@ echo "##### FIXES VARIOS ######"
 
 ### SUMA DE HASH NO FUNCIONA
 ## sudo rm -rf /var/lib/apt/lists/*
-
-echo "##### PERSONALIZACION ######"
-# echo "VARIETY"
-# sudo add-apt-repository ppa:peterlevi/ppa
-# sudo apt update
-# sudo apt install variety
-#
-# echo "CONKY"
-# sudo add-apt-repository -y ppa:teejee2008/ppa
-# sudo apt update
-# sudo apt install -y conky-manager
-
-echo "TEMAS e ICONOS"
-## en cuanto a iconos tal vez sea mejor descargar los paquetes
-## e instalar uno a uno, ya que tienen dependencias con otros paquetes
-## evitaria ver millones en unity tweak
-# #MOKA
-# sudo add-apt-repository ppa:moka/stable
-# sudo apt update
-# sudo apt install moka-icon-theme
-# #NUMIX
-# sudo add-apt-repository ppa:numix/ppa
-# sudo apt update
-# sudo apt install numix-icon-theme numix-icon-theme-circle
-#ELEMENTARY
-# sudo add-apt-repository ppa:elementary-os/daily
-# sudo apt update
-# sudo apt install elementary-icon-theme
-#sudo apt remove elementary-icon-theme
-
-# echo "CONDA"
-# wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
-# sh Miniconda2-latest-Linux-x86_64.sh
