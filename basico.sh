@@ -1,62 +1,91 @@
 #!/bin/
 
 echo "INSTALACION ESENCIAL DESPUES DE INSTALAR UBUNTU AGAIN"
+echo ""
 sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y
 clear
 
 echo "COMPRIMIDOS"
+echo ""
 sudo apt install -y unace unrar zip unzip p7zip-full p7zip-rar
 sudo apt install ntp -y
 clear
 
 echo "RESTRICTED EXTRAS"
+echo ""
 sudo apt install -y ubuntu-restricted-extras
 
 echo "LIBRERIAS IMPORTANTES"
+echo ""
 wget https://mirrors.kernel.org/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb
-sudo dpkg -i libpng12-01_1.2.54-1ubuntu1_amd64.deb
+#sudo dpkg -i libpng12-01_1.2.54-1ubuntu1_amd64.deb
+sudo dpkg -i libpng12-0_1.2.54-1ubuntu1_amd64.deb
 #sudo apt install libpng12-0
 
 sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
-sudo apt install gfortran libcurl4-openssl-dev libxml2-dev 
-sudo apt install libssl-dev libgdal20 gdal-bin python-gdal python3-gdal
-sudo apt-get build-dep gdal
-sudo apt install libcairo2-dev 
+sudo apt install gfortran libcurl4-openssl-dev libxml2-dev -y
+sudo apt install libssl-dev libgdal20 gdal-bin python-gdal python3-gdal -y
+sudo apt-get build-dep gdal -y
+sudo apt install libcairo2-dev -y
+clear
 
 echo "Laptop-Tweaks"
+echo ""
 sudo add-apt-repository -y ppa:linrunner/tlp
 sudo apt update
 sudo apt install tlp tlp-rdw thermald
 sudo tlp start
+clear
 
 echo "GIT"
+echo ""
 sudo apt install -y git
+clear
 
 echo "REDSHIFT"
+echo ""
 sudo apt install -y redshift-gtk
+clear
 
 echo "##### OTRAS APLICACIONES ######"
-
+echo ""
 echo "CALIBRE"
+echo ""
 sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
+clear
 
 echo "apps en SNAP"
+echo ""
 sudo apt install snapd
-#sudo apt update -qq && sudo snap install spotify vlc  skype foobar2000 gimp 
-echo editores de imagenes
+echo ""
+echo "VARIOS"
+sudo snap install opera simplescreenrecorder-mardy
+echo ""
+echo "MULTIMEDIA"
+echo ""
+sudo apt update -qq && sudo snap install spotify foobar2000 picard
+echo ""
+echo "editores de imagenes"
+echo ""
 sudo snap install gimp pencilsheep inkscape
-echo manejo PDF
+echo ""
+echo "PDF"
+echo ""
 sudo snap install briss krop pdfmixtool #directpdf okular
+echo "DESARROLLO"
+echo ""
 echo sublime text
 sudo snap install sublime-text
 clear
 
 echo "FLATPAK"
-sudo add-apt-repository ppa:alexlarsson/flatpak
+echo ""
+sudo add-apt-repository ppa:alexlarsson/flatpak -y
 sudo apt update
 sudo apt install flatpak
 sudo apt install gnome-software-plugin-flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+clear
 
 echo "bleachbit"
 sudo apt install -y bleachbit
