@@ -46,7 +46,7 @@ sudo apt install snapd
 echo editores de imagenes
 sudo snap install gimp pencilsheep inkscape
 echo manejo PDF
-sudo snap install briss krop directpdf okular
+sudo snap install briss krop pdfmixtool #directpdf okular
 echo sublime text
 sudo snap install sublime-text
 clear
