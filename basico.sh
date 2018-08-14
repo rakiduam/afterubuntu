@@ -17,6 +17,8 @@ sudo apt install -y ubuntu-restricted-extras
 
 echo "LIBRERIAS IMPORTANTES"
 echo ""
+sudo apt-get -qq update && sudo apt-get install -y python-pip linkchecker libgdal-dev libproj-dev libjpeg-dev libpng-dev libgeos-dev libudunits2-dev
+
 wget https://mirrors.kernel.org/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb
 #sudo dpkg -i libpng12-01_1.2.54-1ubuntu1_amd64.deb
 sudo dpkg -i libpng12-0_1.2.54-1ubuntu1_amd64.deb
