@@ -17,6 +17,10 @@ sudo apt install -y ubuntu-restricted-extras
 
 echo "LIBRERIAS IMPORTANTES"
 echo ""
+sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
+sudo add-apt-repository 'deb http://qgis.org/debian bionic main'
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key CAEB3DC3BDF7FB45
+#sudo apt update -qq
 sudo apt-get -qq update && sudo apt-get install -y python-pip linkchecker libgdal-dev libproj-dev libjpeg-dev libpng-dev libgeos-dev libudunits2-dev
 
 wget https://mirrors.kernel.org/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1ubuntu1_amd64.deb
@@ -24,7 +28,6 @@ wget https://mirrors.kernel.org/ubuntu/pool/main/libp/libpng/libpng12-0_1.2.54-1
 sudo dpkg -i libpng12-0_1.2.54-1ubuntu1_amd64.deb
 #sudo apt install libpng12-0
 
-sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
 sudo apt install gfortran libcurl4-openssl-dev libxml2-dev -y
 sudo apt install libssl-dev libgdal20 gdal-bin python-gdal python3-gdal -y
 sudo apt-get build-dep gdal -y
@@ -122,6 +125,8 @@ sudo apt install -y bleachbit
 echo "ACTUALIZAR LIMPIAR"
 sudo apt autoclean -y && sudo apt autoremove -y && sudo update-desktop-database && sudo apt-get install -f -y
 clear
+
+echo "### UPDATE" && sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && echo "### SNAP" && sudo snap refresh && echo "### FLATPAK" &&flatpak update -y && sudo apt autoclean -y && sudo apt autoremove -y
 
 echo "Es Necesario Reiniciar para que los cambios hagan efecto"
 
