@@ -17,6 +17,7 @@ sudo apt install -y ubuntu-restricted-extras
 
 echo "LIBRERIAS IMPORTANTES"
 echo ""
+sudo add-apt-repository deb http://cz.archive.ubuntu.com/ubuntu bionic main universe
 sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
 sudo add-apt-repository 'deb http://qgis.org/debian bionic main'
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key CAEB3DC3BDF7FB45
