@@ -14,6 +14,7 @@ clear
 echo "RESTRICTED EXTRAS"
 echo ""
 sudo apt install -y ubuntu-restricted-extras
+clear
 
 echo "LIBRERIAS IMPORTANTES"
 echo ""
@@ -97,6 +98,7 @@ clear
 
 echo "bleachbit"
 sudo apt install -y bleachbit
+clear
 
 #echo "PLAYONLINUX"
 #sudo apt install -y playonlinux
@@ -130,7 +132,8 @@ sudo apt autoclean -y && sudo apt autoremove -y && sudo update-desktop-database 
 clear
 
 echo "### UPDATE" && sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && echo "### SNAP" && sudo snap refresh && echo "### FLATPAK" &&flatpak update -y && sudo apt autoclean -y && sudo apt autoremove -y
-
+clear
+echo ''
 echo "Es Necesario Reiniciar para que los cambios hagan efecto"
 
 ### SUMA DE HASH NO FUNCIONA
