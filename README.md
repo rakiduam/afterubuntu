@@ -1,9 +1,23 @@
-# afterubuntu
-List of things i ussualy install after reinstall ubuntu OS.
+# Que es este respositorio
+Listado de aplicaciones y cosas que instalo despues de instalar ubuntu.
 
-Instalar aplicaciones tipicas despues de instalar ubuntu 14.04
-debería ser similar en el 16.04
+fuente:
 
+
+## Breves recordatorios
+### linux
+```{shell}
+echo actualizar instalación
+sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y && sudo apt-get autoclean -y && sudo apt-get autoremove -y
+
+echo si esta instalado snap y flatpak
+sudo snap refresh && flatpak update -y
+
+sudo apt install aptitude -y 
+sudo aptitude update && sudo aptitude upgrade -y 
+```
+
+### github
 recordar pasos de uso git:
 - git init
 - git clone
