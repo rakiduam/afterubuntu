@@ -13,8 +13,7 @@ sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y &
 echo si esta instalado snap y flatpak
 sudo snap refresh && flatpak update -y
 
-sudo apt install aptitude -y 
-sudo aptitude update && sudo aptitude upgrade -y 
+
 ```
 
 ### github
