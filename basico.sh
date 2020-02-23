@@ -1,6 +1,6 @@
 #!/bin/
 
-echo "INSTALACION ESENCIAL DESPUES DE INSTALAR UBUNTU AGAIN"
+echo "ACTUALIZACION DESPUES DE INSTALAR UBUNTU"
 echo ""
 sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y
 clear
@@ -8,22 +8,35 @@ clear
 echo "COMPRIMIDOS"
 echo ""
 sudo apt install -y unace unrar zip unzip p7zip-full p7zip-rar
-sudo apt install ntp -y
 clear
 
-echo "RESTRICTED EXTRAS"
+echo "UTILIDADES BASICAS"
+echo "sistema"
+sudo apt install -y ntp ubuntu-restricted-extras gdebi git gnome-tweak-tool  bleachbit
+echo "varias"
+sudo apt install snapd flatpak
+sudo apt install gnome-software-plugin-flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+clear
+
+echo "APLICACIONES SNAP"
 echo ""
-sudo apt install -y ubuntu-restricted-extras
+echo "UTILIDADES"
+sudo apt-get update -qq
+sudo snap install opera simplescreenrecorder-mardy gimp pencilsheep inkscape briss krop pdfmixtool directpdf okular
+echo "MULTIMEDIA"
+sudo snap install spotify foobar2000 picard
 clear
 
 echo "LIBRERIAS IMPORTANTES"
-echo ""
+echo "programar"
+sudo apt-get install g++ gfortran
 sudo add-apt-repository deb http://cz.archive.ubuntu.com/ubuntu bionic main universe
 sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
 sudo add-apt-repository 'deb http://qgis.org/debian bionic main'
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key CAEB3DC3BDF7FB45
 #sudo apt update -qq
-sudo apt-get install g++
+
 sudo apt-get install build-essential
 sudo apt-get -qq update && sudo apt-get install -y python-pip linkchecker libgdal-dev libproj-dev libjpeg-dev libpng-dev libgeos-dev libudunits2-dev
 
@@ -46,11 +59,6 @@ sudo apt install tlp tlp-rdw thermald
 sudo tlp start
 clear
 
-echo "GIT"
-echo ""
-sudo apt install -y git
-clear
-
 echo "REDSHIFT"
 echo ""
 sudo apt install -y redshift-gtk
@@ -58,34 +66,8 @@ clear
 
 echo "##### OTRAS APLICACIONES ######"
 echo ""
-echo "CALIBRE"
-echo ""
-sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
-clear
 
-echo "apps en SNAP"
-echo ""
-sudo apt install snapd
-echo ""
-echo "VARIOS"
-sudo snap install opera simplescreenrecorder-mardy
-echo ""
-echo "MULTIMEDIA"
-echo ""
-sudo apt update -qq && sudo snap install spotify foobar2000 picard
-echo ""
-echo "editores de imagenes"
-echo ""
-sudo snap install gimp pencilsheep inkscape
-echo ""
-echo "PDF"
-echo ""
-sudo snap install briss krop pdfmixtool #directpdf okular
-echo "DESARROLLO"
-echo ""
-echo sublime text
-sudo snap install sublime-text
-clear
+
 
 echo "FLATPAK"
 echo ""
