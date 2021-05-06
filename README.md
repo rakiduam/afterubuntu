@@ -52,6 +52,7 @@ sudo apt install r-base-dev r-cran-sf r-cran-raster r-cran-rjava
 sudo apt install -y unace unrar zip unzip p7zip-full p7zip-rar
 sudo apt install gnupg software-properties-common
 sudo apt install -y libjq-dev libprotobuf-dev libv8-dev libnode-dev
+sudo apt install -y protobuf-compiler
 
 ```
 
