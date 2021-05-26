@@ -9,6 +9,9 @@ fuente:
 Instalacion de CUDA  
 https://developer.nvidia.com/cuda-downloads  
 
+Versiones distintas y autoeleccion de g++ y gcc
+https://www.fosslinux.com/39386/how-to-install-multiple-versions-of-gcc-and-g-on-ubuntu-20-04.htm
+
 
 ## Breves recordatorios  
 ### linux shell  
