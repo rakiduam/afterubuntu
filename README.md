@@ -25,7 +25,7 @@ sudo snap refresh && flatpak update -y
 echo instalar manejo archivos comprimidos
 sudo apt install -y unace unrar zip unzip p7zip-full p7zip-rar
 
-echo agregar repositorio a update; sudo add-apt-repository 'deb http://qgis.org/debian bionic main'
+echo agregar repositorio a update; sudo add-apt-repository 'deb http://qgis.org/debian focal main'
 sudo add-apt-repository 'deb *repositorio* *version* main'
 
 echo install make
@@ -34,6 +34,15 @@ sudo apt-get install -y build-essential
 echo librerias basicas para ubuntu linux/programacion
 sudo apt-get install -y g++ gfortran
 
+echo aplicaciones tipicas con snap
+sudo snap install pycharm-community --classic 
+sudo snap install sublime-text --classic
+sudo snap install libreoffice 
+sudo snap install chromium 
+sudo snap install firefox
+sudo snap install gnome-clocks
+sudo snap install remmina
+sudo snap install pdfmixtool
 
 
 sudo apt install libclang-dev
