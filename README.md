@@ -5,6 +5,7 @@ fuente:
 - https://ispmarin.github.io/data-science/ds-linux-environment/
 - https://mothergeo-py.readthedocs.io/en/latest/index.html
 - https://towardsdatascience.com/how-to-install-tensorflow-gpu-on-ubuntu-18-04-1c1d2d6d6fd2
+- https://towardsdatascience.com/a-guide-to-conda-environments-bc6180fc533
     
 Instalacion de CUDA  
 https://developer.nvidia.com/cuda-downloads  
@@ -68,6 +69,17 @@ sudo apt install -y protobuf-compiler
 
 ```
 
+### conda r  
+```{shell}
+conda create -n renv r -y
+conda activate renv
+conda install -y r-base r-essentials r-rgdal r-rjava r-rtidyverse r-irkernel r-devtools
+conda install -y r-rcpparmadillo
+conda install -y r-caret 
+conda install -y r-sf r-sp r-raster r-terra r-maptools r-ncdf4 
+conda install -y r-doparallel
+conda install -y -c omgarcia r-climatol 
+```
 ### github  
 recordar pasos de uso git:  
 #### clonar  
