@@ -73,13 +73,19 @@ sudo apt install -y protobuf-compiler
 ```{shell}
 conda create -n renv r -y
 conda activate renv
-conda install -y r-base r-essentials r-rgdal r-rjava r-rtidyverse r-irkernel r-devtools
+conda install -y r-base r-essentials r-rgdal r-rjava r-rtidyverse r-irkernel r-devtools r-doparallel
 conda install -y r-rcpparmadillo
-conda install -y r-caret 
-conda install -y r-sf r-sp r-raster r-terra r-maptools r-ncdf4 
+conda install -y r-caret r-mlr r-tidymodels
+conda install -y r-sf r-sp r-gstat r-exactextractr r-raster r-terra r-maptools r-ncdf4 r-leaflet r-tmap r-gee
 conda install -y r-doparallel
 conda install -y -c omgarcia r-climatol 
 ```
+
+### conda python  
+```{shell}
+conda create -n py37 python=3.7 numpy gdal scipy pandas xarray geopandas scikit-image scikit-learn statsmodels.api matplotlib seaborn 
+```
+
 ### github  
 recordar pasos de uso git:  
 #### clonar  
