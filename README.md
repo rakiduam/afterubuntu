@@ -78,12 +78,22 @@ conda install -y r-rcpparmadillo
 conda install -y r-caret r-mlr r-tidymodels
 conda install -y r-sf r-sp r-gstat r-exactextractr r-raster r-terra r-maptools r-ncdf4 r-leaflet r-tmap r-gee
 conda install -y r-doparallel
-conda install -y -c omgarcia r-climatol 
+conda install -y -c omgarcia r-climatol
+
+conda install -y r-base r-essentials r-rgdal r-rjava r-tidyverse r-irkernel r-devtools r-doparallel r-rcpparmadillo r-caret r-mlr r-tidymodels r-sf r-sp r-gstat r-exactextractr r-raster r-terra r-maptools r-ncdf4 r-leaflet r-tmap r-gee
+ 
 ```
 
 ### conda python  
 ```{shell}
-conda create -n py37 python=3.7 numpy gdal scipy pandas xarray geopandas scikit-image scikit-learn statsmodels.api matplotlib seaborn 
+conda create -n py3.8 python=3.8 numpy gdal scipy pandas beautifulsoup4 xarray geopandas rasterio netcdf4 h5py whitebox_tools camelot-py scikit-image scikit-learn statsmodels matplotlib seaborn -y
+conda activate py38 
+conda install -y numpy gdal scipy pandas beautifulsoup4 xarray geopandas rasterio netcdf4 h5py whitebox_tools camelot-py scikit-image scikit-learn statsmodels matplotlib seaborn 
+
+conda create -n pdf python=3 camelot-py -y
+
+conda create -n geo python=3 geopandas rasterio cartopy statsmodels whitebox_tools -y
+
 ```
 
 ### github  
