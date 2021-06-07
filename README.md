@@ -80,7 +80,7 @@ conda install -y r-sf r-sp r-gstat r-exactextractr r-raster r-terra r-maptools r
 conda install -y r-doparallel
 conda install -y -c omgarcia r-climatol
 
-conda install -y r-base r-essentials r-rgdal r-rjava r-tidyverse r-irkernel r-devtools r-doparallel r-rcpparmadillo r-caret r-mlr r-tidymodels r-sf r-sp r-gstat r-exactextractr r-raster r-terra r-maptools r-ncdf4 r-leaflet r-tmap r-gee
+conda install -y r-base r-essentials r-rgdal r-rjava r-tidyverse r-rbokeh r-irkernel r-devtools r-doparallel r-rcpparmadillo r-caret r-mlr r-tidymodels r-sf r-sp r-gstat r-exactextractr r-raster r-terra r-maptools r-ncdf4 r-leaflet r-tmap r-gee 
  
 ```
 
