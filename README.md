@@ -15,7 +15,12 @@ https://www.fosslinux.com/39386/how-to-install-multiple-versions-of-gcc-and-g-on
 
 
 ## Breves recordatorios  
-### linux shell  
+### linux shell 
+```{shell}
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 40976EAF437D05B5
+```
+
+
 ```{shell}
 echo actualizar instalación
 sudo apt-get update && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y && sudo apt-get autoclean -y && sudo apt-get autoremove -y
